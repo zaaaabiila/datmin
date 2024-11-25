@@ -5,8 +5,8 @@ from textblob import TextBlob
 import plotly.express as px
 import urllib.request  # Untuk mengunduh file
 
-# Unduh model CRF jika belum ada
-MODEL_URL = "https://raw.githubusercontent.com/dhavinaocxa/latihan-datmin/main/all_indo_man_tag_corpus_model.crf.tagger"
+# Unduh model CRF jika belum ada 
+MODEL_URL = "https://github.com/zaaaabiila/datmin/blob/main/all_indo_man_tag_corpus_model.crf.tagger"
 MODEL_PATH = "all_indo_man_tag_corpus_model.crf.tagger"
 
 try:
