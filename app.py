@@ -6,7 +6,7 @@ import plotly.express as px
 import urllib.request  # Untuk mengunduh file
 
 # Unduh model CRF jika belum ada 
-MODEL_URL = "https://github.com/zaaaabiila/datmin/blob/main/all_indo_man_tag_corpus_model.crf.tagger"
+MODEL_URL = "https://github.com/zaaaabiila/datmin/blob/main"
 MODEL_PATH = "all_indo_man_tag_corpus_model.crf.tagger"
 
 try:
