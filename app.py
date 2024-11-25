@@ -5,7 +5,7 @@ from textblob import TextBlob
 import plotly.express as px
 
 # Unduh model CRF jika belum ada
-MODEL_URL = "https://github.com/zaaaabiila/datmin/blob/main/all_indo_man_tag_corpus_model.crf.tagger"
+MODEL_URL = "https://github.com/zaaaabiila/datmin/blob/main/requirements.txt"
 MODEL_PATH = "all_indo_man_tag_corpus_model.crf.tagger"
 
 try:
@@ -24,13 +24,7 @@ uploaded_file = st.file_uploader("Upload dataset CSV Anda", type=["csv"])
 if uploaded_file is not None:
     try:
         # Debug awal: tampilkan isi file mentah
-        st.write("Pratinjau isi file mentah:")
-        raw_data = uploaded_file.read().decode('utf-8')
-        st.text(raw_data[:500])  # Tampilkan 500 karakter pertama
-
-        # Baca file CSV
-        uploaded_file.seek(0)  # Kembali ke awal file
-        data = pd.read_csv(uploaded_file, encoding='ISO-8859-1', sep=',', quoting=3, error_bad_lines=False)
+        data = pd.read_csv(uploaded_file, encoding='ISO-8859-1')
         st.write("Dataset asli:")
         st.dataframe(data.head())
 
